@@ -14,7 +14,7 @@ export const gradientStyle = {
 const SectionHeader = ({ title }) => (
 
   // <h1 class="text-5xl p-4 text-center font-bold from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent">A Guide to Adding Gradients with Tailwind CSS</h1>
-  <div style={gradientStyle} className=" relative font-bold leading-20 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-blue-400 to-teal-300">
+  <div style={gradientStyle} className=" relative font-bold leading-none bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-blue-400 to-teal-300">
     {title}
   </div>)
 
@@ -135,14 +135,14 @@ function LandingPage() {
             Empowering Innovation Through Data
           </div>
           <div className="relative h-[1em] overflow-hidden">
-            <span className={"absolute h-full w-full -translate-y-full animate-slide"} >
+            <span className="absolute inset-0 h-full w-full leading-none animate-slide [animation-delay:0s]">
               <SectionHeader title={"Excellence"} />
             </span>
-            <span className={"absolute h-full w-full -translate-y-full animate-slide leading-none text-white [animation-delay:2.2s]"} >
-              <SectionHeader title={"Intelligence"} />
-            </span>
-            <span className={"absolute h-full w-full -translate-y-full animate-slide leading-none text-white [animation-delay:1s]"} >
+            <span className="absolute inset-0 h-full w-full leading-none animate-slide [animation-delay:-5s]">
               <SectionHeader title={"Analytics"} />
+            </span>
+            <span className="absolute inset-0 h-full w-full leading-none animate-slide [animation-delay:-2.5s]">
+              <SectionHeader title={"Intelligence"} />
             </span>
 
           </div>
@@ -241,20 +241,20 @@ function LandingPage() {
           <h1 className="font-medium text-white leading-[97px] max-md:max-w-full max-md:text-4xl max-md:leading-[60px]">
             Empowering Innovation Through Data
           </h1>
-          <p className="mt-7 font-extrabold bg-clip-text bg-[linear-gradient(126deg,#1862F7_-107.15%,#3DD6C4_98.8%)] leading-[135%] max-md:max-w-full max-md:text-4xl">
+          <div className="mt-7 font-extrabold leading-none max-md:max-w-full max-md:text-4xl">
             <div className="relative h-[1em] overflow-hidden">
-              <span className={"absolute h-full w-full -translate-y-full animate-slide"} >
+              <span className="absolute inset-0 h-full w-full leading-none animate-slide [animation-delay:0s]">
                 <SectionHeader title={"Excellence"} />
               </span>
-              <span className={"absolute h-full w-full -translate-y-full animate-slide leading-none text-white [animation-delay:2.2s]"} >
-                <SectionHeader title={"Intelligence"} />
-              </span>
-              <span className={"absolute h-full w-full -translate-y-full animate-slide leading-none text-white [animation-delay:1s]"} >
+              <span className="absolute inset-0 h-full w-full leading-none animate-slide [animation-delay:-5s]">
                 <SectionHeader title={"Analytics"} />
+              </span>
+              <span className="absolute inset-0 h-full w-full leading-none animate-slide [animation-delay:-2.5s]">
+                <SectionHeader title={"Intelligence"} />
               </span>
 
             </div>
-          </p>
+          </div>
           <p className="mt-11 text-lg leading-6 text-white max-md:mt-10 max-md:max-w-full">
             We specialize in customized data analytics solutions and strategic
             partnerships with industry leaders.{" "}

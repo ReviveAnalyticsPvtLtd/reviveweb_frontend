@@ -8,16 +8,17 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        slide: "slide 3.5s linear infinite",
+        slide: "slide 7.5s linear infinite",
         scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
         slide: {
-          "0%": { transform: "translateY(100%)", opacity: 0.1 },
-          "15%": { transform: "translateY(0)", opacity: 1 },
-          "30%": { transform: "translateY(0)", opacity: 1 },
-          "45%": { transform: "translateY(-100%)", opacity: 1 },
-          "100%": { transform: "translateY(-100%)", opacity: 0.1 },
+          "0%": { transform: "translateY(100%)", opacity: "0" },
+          "5%": { transform: "translateY(0)", opacity: "1" },
+          "28%": { transform: "translateY(0)", opacity: "1" },
+          "33.33%": { transform: "translateY(-100%)", opacity: "0" },
+          "33.34%": { transform: "translateY(100%)", opacity: "0" },
+          "100%": { transform: "translateY(100%)", opacity: "0" },
         },
         scroll: {
           to: {
