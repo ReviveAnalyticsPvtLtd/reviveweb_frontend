@@ -52,3 +52,10 @@ Thumbs.db
 # Next.js generated files
 .next/
 out/
+.vercel
+.env*
+
+# Vercel local files
+.vercel/
+.env*
+!.env.example
